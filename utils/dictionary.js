@@ -1,0 +1,26 @@
+const sanitizedDictionary = {
+  outdoorpool: 'Outdoor Pool',
+  indoorpool: 'Indoor Pool',
+  businesscenter: 'Business Center',
+  drycleaning: 'Dry Cleaning',
+  breakfast: 'Breakfast',
+  bar: 'Bar',
+  bathtub: 'Bath Tub',
+  tub: 'Tub',
+  concierge: 'Concierge',
+  childcare: 'Childcare',
+  hairdryer: 'Hair Dryer',
+  iron: 'Iron',
+  tv: 'TV',
+  television: 'TV',
+  aircon: 'Air Conditioning',
+  airconditioning: 'Air Conditioning',
+  minibar: 'Minibar',
+  'mini-bar': 'Minibar',
+  coffeemachine: 'Coffee Machine',
+  kettle: 'Kettle',
+  wifi: 'Wifi',
+  parking: 'Parking',
+};
+
+module.exports = sanitizedDictionary;
