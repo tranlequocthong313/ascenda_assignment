@@ -1,5 +1,5 @@
 const Location = require('../Location');
-const LocationBuilder = require('../LocationBuilder');
+const LocationBuilder = require('../builders/LocationBuilder');
 
 describe('Location and LocationBuilder', () => {
   it('should build an Location object with provided values', () => {

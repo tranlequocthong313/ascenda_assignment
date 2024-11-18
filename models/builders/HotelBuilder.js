@@ -1,4 +1,4 @@
-const Hotel = require('./Hotel');
+const Hotel = require('../Hotel');
 
 class HotelBuilder {
   setId(id) {

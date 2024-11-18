@@ -1,5 +1,5 @@
 const Images = require('../Images');
-const ImagesBuilder = require('../ImagesBuilder');
+const ImagesBuilder = require('../builders/ImagesBuilder');
 
 describe('Images and ImagesBuilder', () => {
   it('should build an Images object with provided values', () => {

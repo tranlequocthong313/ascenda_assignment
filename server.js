@@ -24,12 +24,6 @@ async function fetchHotels(hotelIds = [], destinationIds = []) {
 const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
 
-  if (parsedUrl.pathname !== '/hotels') {
-    res.writeHead(404, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'Not Found' }));
-    return;
-  }
-
   const hotelIds = parsedUrl.query.hotelIds
     ? parsedUrl.query.hotelIds.split(',')
     : [];
@@ -38,6 +32,7 @@ const server = http.createServer(async (req, res) => {
     : [];
 
   try {
+    console.log(hotelIds, destinationIds);
     const result = await fetchHotels(hotelIds, destinationIds);
 
     res.writeHead(200, { 'Content-Type': 'application/json' });

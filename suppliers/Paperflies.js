@@ -1,12 +1,12 @@
-const BaseSupplier = require('./BaseSupplier');
-const HotelBuilder = require('../models/HotelBuilder');
-const LocationBuilder = require('../models/LocationBuilder');
-const AmenitiesBuilder = require('../models/AmenitiesBuilder');
-const ImagesBuilder = require('../models/ImagesBuilder');
+const BaseSupplierTemplate = require('./BaseSupplierTemplate');
+const HotelBuilder = require('../models/builders/HotelBuilder');
+const LocationBuilder = require('../models/builders/LocationBuilder');
+const AmenitiesBuilder = require('../models/builders/AmenitiesBuilder');
+const ImagesBuilder = require('../models/builders/ImagesBuilder');
 const Image = require('../models/Image');
 const { PAPERFLIES_ENDPOINT } = require('../utils/constants');
 
-class Paperflies extends BaseSupplier {
+class Paperflies extends BaseSupplierTemplate {
   endpoint() {
     return PAPERFLIES_ENDPOINT;
   }

@@ -1,4 +1,4 @@
-class BaseSupplier {
+class BaseSupplierTemplate {
   async fetch() {
     const response = await fetch(this.endpoint());
     const data = await response.json();
@@ -14,4 +14,4 @@ class BaseSupplier {
   }
 }
 
-module.exports = BaseSupplier;
+module.exports = BaseSupplierTemplate;

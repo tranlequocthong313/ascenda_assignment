@@ -17,5 +17,5 @@
    Then, visit the URL:
 
    ```bash
-   http://localhost:6969/hotels?hotelIds=iJhz,f8c9&destinationIds=5432,1122
+   http://localhost:6969?hotelIds=iJhz,f8c9&destinationIds=5432,1122
    ```

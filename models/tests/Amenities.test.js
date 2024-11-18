@@ -1,5 +1,5 @@
 const Amenities = require('../Amenities');
-const AmenitiesBuilder = require('../AmenitiesBuilder');
+const AmenitiesBuilder = require('../builders/AmenitiesBuilder');
 
 describe('Amenities and AmenitiesBuilder', () => {
   it('should build an Amenities object with provided values', () => {

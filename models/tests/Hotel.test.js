@@ -1,8 +1,8 @@
-const AmenitiesBuilder = require('../AmenitiesBuilder');
 const Hotel = require('../Hotel');
-const HotelBuilder = require('../HotelBuilder');
-const ImagesBuilder = require('../ImagesBuilder');
-const LocationBuilder = require('../LocationBuilder');
+const HotelBuilder = require('../builders/HotelBuilder');
+const AmenitiesBuilder = require('../builders/AmenitiesBuilder');
+const ImagesBuilder = require('../builders/ImagesBuilder');
+const LocationBuilder = require('../builders/LocationBuilder');
 
 describe('Hotel and HotelBuilder', () => {
   it('should build an Hotel object with provided values', () => {

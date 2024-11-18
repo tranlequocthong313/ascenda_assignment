@@ -3,7 +3,7 @@ const Validator = require('./Validator');
 class ObjectCleaner {
   cleanObject(obj) {
     if (!Validator.isObject(obj)) {
-      throw new Error('Input must be object');
+      throw new Error('Input must be an object');
     }
 
     const result = Validator.isArray(obj) ? [] : {};

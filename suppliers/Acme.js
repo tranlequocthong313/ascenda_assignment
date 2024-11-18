@@ -1,10 +1,10 @@
-const BaseSupplier = require('./BaseSupplier');
-const HotelBuilder = require('../models/HotelBuilder');
-const LocationBuilder = require('../models/LocationBuilder');
-const AmenitiesBuilder = require('../models/AmenitiesBuilder');
+const BaseSupplierTemplate = require('./BaseSupplierTemplate');
+const HotelBuilder = require('../models/builders/HotelBuilder');
+const LocationBuilder = require('../models/builders/LocationBuilder');
+const AmenitiesBuilder = require('../models/builders/AmenitiesBuilder');
 const { ACME_ENDPOINT } = require('../utils/constants');
 
-class Acme extends BaseSupplier {
+class Acme extends BaseSupplierTemplate {
   endpoint() {
     return ACME_ENDPOINT;
   }

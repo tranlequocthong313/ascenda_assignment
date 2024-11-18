@@ -10,7 +10,7 @@ describe('ObjectCleaner', () => {
   describe('cleanObject', () => {
     it('should throw an error if input is not an object', () => {
       expect(() => cleaner.cleanObject('not an object')).toThrow(
-        'Input must be object'
+        'Input must be an object'
       );
     });
 

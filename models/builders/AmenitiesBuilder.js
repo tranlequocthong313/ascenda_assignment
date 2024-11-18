@@ -1,4 +1,4 @@
-const Amenities = require('./Amenities');
+const Amenities = require('../Amenities');
 
 class AmenitiesBuilder {
   setGeneral(general) {

@@ -1,4 +1,4 @@
-const Images = require('./Images');
+const Images = require('../Images');
 
 class ImagesBuilder {
   setRooms(rooms) {
